@@ -69,7 +69,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "API\nВызов",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -82,7 +82,7 @@
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              "API\nВызов"
             ],
             "id": "fcc8f5c5-0151-4906-924b-e0e635f3b7fb",
             "source": {
@@ -93,7 +93,12 @@
               "cell": "5b263aa6-6f89-47c7-8811-1e2ce064d952",
               "port": "a6de8391-b1fe-4e1f-b4a1-99417d9912a9"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 310,
+                "y": 250
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -160,7 +165,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Запрос",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -173,22 +178,130 @@
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              "Запрос"
             ],
-            "id": "ed22f2fd-0559-429d-89cb-6e286c72c824",
+            "id": "0e45cf03-92e1-46a3-afff-9af94ed5dd3f",
             "source": {
-              "x": 150,
-              "y": 150
+              "cell": "1a86c366-a0a9-4474-9abe-8fd458c45ad8",
+              "port": "fdecb00f-70fc-4952-8888-8d1d36bbb66b"
             },
             "target": {
               "cell": "833a7af9-846b-4162-8be6-adfdfd223660",
               "port": "0c4e8260-31cf-468b-81d0-b416da4af1c0"
-            }
+            },
+            "vertices": [
+              {
+                "x": 210,
+                "y": 100
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Ответ",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Ответ"
+            ],
+            "id": "a3ba4e36-e303-431d-a5cd-e3eb1b3be196",
+            "source": {
+              "cell": "5b263aa6-6f89-47c7-8811-1e2ce064d952",
+              "port": "a6de8391-b1fe-4e1f-b4a1-99417d9912a9"
+            },
+            "target": {
+              "cell": "833a7af9-846b-4162-8be6-adfdfd223660",
+              "port": "c1ec419a-4599-4a2d-a8ca-10016b6f7ec1"
+            },
+            "vertices": [
+              {
+                "x": 390,
+                "y": 250
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Отображение",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Отображение"
+            ],
+            "id": "01251ecc-a69a-45c7-b755-de71ffaea64f",
+            "source": {
+              "cell": "833a7af9-846b-4162-8be6-adfdfd223660",
+              "port": "0c4e8260-31cf-468b-81d0-b416da4af1c0"
+            },
+            "target": {
+              "cell": "1a86c366-a0a9-4474-9abe-8fd458c45ad8",
+              "port": "fdecb00f-70fc-4952-8888-8d1d36bbb66b"
+            },
+            "vertices": [
+              {
+                "x": 210,
+                "y": 200
+              }
+            ]
           },
           {
             "position": {
-              "x": 80,
-              "y": 40
+              "x": 30,
+              "y": 25
             },
             "size": {
               "width": 112.5,
@@ -689,6 +802,126 @@
               "threats": []
             },
             "zIndex": 15
+          },
+          {
+            "position": {
+              "x": 610,
+              "y": 310
+            },
+            "size": {
+              "width": 140,
+              "height": 130
+            },
+            "attrs": {
+              "text": {
+                "text": "ЛК\nBackend"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "a6de8391-b1fe-4e1f-b4a1-99417d9912a9"
+                },
+                {
+                  "group": "right",
+                  "id": "c62eca7c-6fe9-4477-8d11-408e3f39012f"
+                },
+                {
+                  "group": "bottom",
+                  "id": "c1ec419a-4599-4a2d-a8ca-10016b6f7ec1"
+                },
+                {
+                  "group": "left",
+                  "id": "0c4e8260-31cf-468b-81d0-b416da4af1c0"
+                }
+              ]
+            },
+            "id": "79e07e79-40ce-4b3b-9a70-c71afa051d98",
+            "data": {
+              "type": "tm.Process",
+              "name": "ЛК\nBackend",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            },
+            "zIndex": 16
           }
         ]
       }

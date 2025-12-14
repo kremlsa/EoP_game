@@ -576,6 +576,38 @@
             }
           },
           {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "d3520b9c-d854-4f0c-8b13-25b4c513ba13",
+            "source": {
+              "x": 770,
+              "y": 20
+            },
+            "target": {
+              "x": 770,
+              "y": 670
+            },
+            "vertices": [
+              {
+                "x": 770,
+                "y": 340
+              }
+            ]
+          },
+          {
             "position": {
               "x": 30,
               "y": 25
@@ -1467,6 +1499,54 @@
               "storesInventory": false,
               "threats": []
             }
+          },
+          {
+            "position": {
+              "x": 576,
+              "y": 25
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "DMZ"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "6ffc6fce-db86-4059-9c46-3a66532b94f0",
+            "zIndex": 20,
+            "data": {
+              "type": "tm.Text",
+              "name": "DMZ",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 872,
+              "y": 25
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Корпоративная\nСеть"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "ef82f7c3-7428-4d93-9adb-f2b319927831",
+            "data": {
+              "type": "tm.Text",
+              "name": "Корпоративная\nСеть",
+              "hasOpenThreats": false
+            },
+            "zIndex": 21
           }
         ]
       }
